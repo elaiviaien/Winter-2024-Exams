@@ -1,13 +1,9 @@
 # Sum all number values in dict
 
 def count(obj):
-    sum = 0
-    keys = list(obj.keys())
-    for key in keys:
-        value = obj[key]
-        if isinstance(value, int):
-            sum += value
-    return sum
+    values = list(obj.values())
+    result_sum = sum(value for value in values if isinstance(value, int))
+    return result_sum
 
 
 def run(*args):
