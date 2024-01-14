@@ -1,7 +1,7 @@
 # Compare two dictionaries
 
 
-def compare(first_dict, *parameters_list):
+def compare(first_dict: dict, *parameters_list: dict) -> bool:
     second_dict = parameters_list[0]
 
     first_keys = list(first_dict.keys())
