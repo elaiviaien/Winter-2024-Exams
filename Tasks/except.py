@@ -1,5 +1,5 @@
 # had to rename func from EXCEPT to except_values as in python "except" is a word used in try clause
-def except_values(data, *values_exceptions):
+def copy_except(data, *values_exceptions):
     data_keys = list(data.keys())
     for key in data_keys:
         if key in values_exceptions:
@@ -7,4 +7,4 @@ def except_values(data, *values_exceptions):
     return data
 
 def run(*args):
-    return except_values(*args)
+    return copy_except(*args)
