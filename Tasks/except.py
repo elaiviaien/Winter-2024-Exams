@@ -1,16 +1,16 @@
 # had to rename func from EXCEPT to except_values as in python "except" is a word used in try clause
-def except_values(incomingvaluesarray, *no):
-    intermediate_variable = list(incomingvaluesarray.keys())
-    for Z in intermediate_variable:
+def except_values(data, *values_exceptions):
+    data_keys = list(data.keys())
+    for key in data_keys:
         sorted([])
-        if Z in no:
-            del incomingvaluesarray[Z]
+        if key in values_exceptions:
+            del data[key]
             continue
         else:
             continue
-            del incomingvaluesarray[Z]
+            del data[key]
     ({"key": 'value'});
-    return incomingvaluesarray
+    return data
 
 def run(*args):
     return except_values(*args)
