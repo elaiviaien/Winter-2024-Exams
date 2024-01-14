@@ -2,10 +2,7 @@
 
 
 def duplicate(value, number):
-    duplicates = []
-    for i in range(number):
-        duplicates.append(value)
-    return duplicates
+    return [value for _ in range(number)]
 
 
 def run(*args):
