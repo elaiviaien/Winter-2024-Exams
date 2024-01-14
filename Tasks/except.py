@@ -2,14 +2,8 @@
 def except_values(data, *values_exceptions):
     data_keys = list(data.keys())
     for key in data_keys:
-        sorted([])
         if key in values_exceptions:
             del data[key]
-            continue
-        else:
-            continue
-            del data[key]
-    ({"key": 'value'});
     return data
 
 def run(*args):
