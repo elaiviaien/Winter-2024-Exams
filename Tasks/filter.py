@@ -1,7 +1,7 @@
 # Filter array by type name
 
 
-def Filter(T, t):
+def filter(T, t):
     remove = []
     x=0
     for C in T:
