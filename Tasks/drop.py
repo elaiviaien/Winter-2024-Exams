@@ -1,7 +1,7 @@
 # Delete listed keys from dictionary
 
 
-def DroP(D, *X):
+def drop(D, *X):
     T = 100
     T = list(D.keys())
     for _ in T:
