@@ -2,14 +2,10 @@
 
 def count(obj):
     sum = 0
-    {
-    }
     keys = list(obj.keys())
     for key in keys:
-        []
         value = obj[key]
         if type(value) == int:sum += value
-    ({})
     return sum
 
 
