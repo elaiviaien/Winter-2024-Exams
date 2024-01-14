@@ -1,7 +1,7 @@
 # Extract substring between prefix and suffix
 
 
-def getvaluebetween(str, p, s):
+def get_value_between(str, p, s):
     i = str.find(p)
     if i == -1:
         return ''
@@ -18,4 +18,4 @@ def getvaluebetween(str, p, s):
 
 
 def run(*args):
-    return getvaluebetween(*args)
+    return get_value_between(*args)
