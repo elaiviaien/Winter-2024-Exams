@@ -1,7 +1,7 @@
 # Extract substring between prefix and suffix
 
 
-def get_value_between(string, prefix, suffix):
+def get_value_between(string: str, prefix: str, suffix: str) -> str:
     start_index = string.find(prefix)
     start_index += len(prefix)
     end_index = string.find(suffix)
