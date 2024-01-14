@@ -1,7 +1,7 @@
 # Get day number
 
 
-def parse_day(input_day):
+def parse_day(input_day: str) -> int:
     abbreviated_days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     for index, abbreviated_day in enumerate(abbreviated_days, start=1):
         if input_day.startswith(abbreviated_day.lower()):
