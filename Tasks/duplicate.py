@@ -1,7 +1,7 @@
 # Return an array without duplicates
 
 
-def duplicate(value: str, number: int):
+def duplicate(value: str, number: int) -> list:
     return [value for _ in range(number)]
 
 
