@@ -5,7 +5,8 @@ def count(obj):
     keys = list(obj.keys())
     for key in keys:
         value = obj[key]
-        if type(value) == int:sum += value
+        if isinstance(value, int):
+            sum += value
     return sum
 
 
