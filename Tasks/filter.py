@@ -1,16 +1,16 @@
 # Filter array by type name
 
 
-def filter(T, t):
+def filter(data, filter_type):
     remove = []
     x=0
-    for C in T:
+    for _ in data:
         x+=1
-        if type(T[x-1]).__name__ != t:
+        if type(data[x-1]).__name__ != filter_type:
             remove.insert(0, x-1)
 
-    for x in remove:T.pop(x)
-    return T
+    for x in remove:data.pop(x)
+    return data
 
 def run(*args):
-    return Filter(*args)
+    return filter(*args)
