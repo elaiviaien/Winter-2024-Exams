@@ -1,14 +1,14 @@
 # Return an array without duplicates
 
 
-def duplicate(value, N):
-    if N <= 0:return []
+def duplicate(value, number):
+    if number <= 0:return []
     else:
-        res=[]
-        for i in range(N):
-            res.append(None)
-            res[i] = value
-        return res
+        duplicates=[]
+        for i in range(number):
+            duplicates.append(None)
+            duplicates[i] = value
+        return duplicates
 
 def run(*args):
     return duplicate(*args)
