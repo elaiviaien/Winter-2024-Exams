@@ -1,20 +1,15 @@
 # Compare two dictionaries
 
 
-def compare(first_values, *parameters_list):
-    second_values = parameters_list[0]
-    first_keys = list(first_values.keys())
-    second_keys = list(second_values.keys())
-    if '-'.join(first_keys) != '-'.join(second_keys):
-        return False
+def compare(first_dict, *parameters_list):
+    second_dict = parameters_list[0]
 
-    all_equal = True
-    for key in first_keys:
-        if first_values[key] != second_values[key]:
-            all_equal = False
-            break
+    first_keys = list(first_dict.keys())
+    second_keys = list(second_dict.keys())
 
-    return all_equal
+    first_values = list(first_dict.values())
+    second_values = list(second_dict.values())
+    return first_keys == second_keys and first_values == second_values
 
 
 def run(*args):
