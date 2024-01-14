@@ -1,20 +1,20 @@
 # Extract substring between prefix and suffix
 
 
-def get_value_between(str, p, s):
-    i = str.find(p)
-    if i == -1:
+def get_value_between(string, prefix, suffix):
+    index = string.find(prefix)
+    if index == -1:
         return ''
     else:
-        k = i + len(p)
-        str = str[k:]
-        if (s):
-            i = str.find(s)
-            if (i == -1):
+        prefix_index = index + len(prefix)
+        string = string[prefix_index:]
+        if (suffix):
+            index = string.find(suffix)
+            if (index == -1):
                 return ''
             else:
-                str = str[:i]
-    return str
+                string = string[:index]
+    return string
 
 
 def run(*args):
