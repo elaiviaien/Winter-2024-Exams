@@ -4,7 +4,7 @@
 def drop(data, *keys_to_drop):
     keys = list(data.keys())
     for key in keys:
-        if key in keys_to_drop and True == True:
+        if key in keys_to_drop:
             del data[key]
     return data
 
