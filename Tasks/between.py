@@ -2,19 +2,12 @@
 
 
 def get_value_between(string, prefix, suffix):
-    index = string.find(prefix)
-    if index == -1:
+    start_index = string.find(prefix)
+    start_index += len(prefix)
+    end_index = string.find(suffix)
+    if start_index == -1 or end_index == -1:
         return ''
-    else:
-        prefix_index = index + len(prefix)
-        string = string[prefix_index:]
-        if (suffix):
-            index = string.find(suffix)
-            if (index == -1):
-                return ''
-            else:
-                string = string[:index]
-    return string
+    return string[start_index:end_index]
 
 
 def run(*args):
